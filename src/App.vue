@@ -1,30 +1,12 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="bg-green-400 text-gray-700 p-5 md:flex md:justify-around md:items-center">
+    <h1 class="text-4xl text-center">Yash</h1>
+      <ul class="flex justify-around text-xl mt-3 md:space-x-5 md:mt-0">
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/create">Create Blog</router-link></li>
+        <li><router-link to="/manage">Manage Blog</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
+      </ul>
   </div>
   <router-view/>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
