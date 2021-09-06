@@ -28,14 +28,14 @@
 
 <script>
 import axios from 'axios'
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 import { ref } from 'vue'
 export default {
     setup() {
-        const posts = ref({id: uuidv4(),title: '',body: ''})
+        const posts = ref({title: '',body: '', user_id: '13'})
         function create() {
-        axios.post(`http://localhost:8080/posts.json`,posts.value)
-        .then(response => {console.log(response.data)})
+        axios.post(`v1/posts`,posts.value)
+        .then(response => {console.log(response.data.data)})
         posts.value = ''
         }
         return {posts, create}
