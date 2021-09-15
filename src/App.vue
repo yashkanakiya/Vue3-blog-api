@@ -4,6 +4,7 @@
       <ul class="flex justify-around text-xl font-semibold mt-3 md:space-x-5 md:mt-0">
         <li><router-link to="/" class="hover:text-white">Home</router-link></li>
         <li><router-link to="/create" class="hover:text-white">Create Blog</router-link></li>
+        <li><router-link to="/form" class="hover:text-white">Form</router-link></li>
       </ul>
   </div>
   <router-view/>

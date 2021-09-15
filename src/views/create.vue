@@ -32,7 +32,7 @@ import axios from 'axios'
 import { ref } from 'vue'
 export default {
     setup() {
-        const posts = ref({title: '',body: '', user_id: '13'})
+        const posts = ref({title: '',body: '', user_id: '3'})
         function create() {
         axios.post(`v1/posts`,posts.value)
         .then(response => {console.log(response.data.data)})
